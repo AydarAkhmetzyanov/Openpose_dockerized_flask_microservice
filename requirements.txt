@@ -1,0 +1,16 @@
+Flask==1.0.2
+argparse
+dill
+fire
+tensorflow
+matplotlib
+psutil
+requests
+scikit-image
+scipy
+slidingwindow
+tqdm
+git+https://github.com/ppwwyyxx/tensorpack.git
+numba
+opencv-contrib-python
+
