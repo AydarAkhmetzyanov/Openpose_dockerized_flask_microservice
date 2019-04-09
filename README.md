@@ -1,7 +1,7 @@
 Openpose dockerized flask microservice
 
-Dockerized openpose web microservice based on flask with thin tensorflow implementation of pose estimation. Suitable for systems, when you need isolated pose estimation service.
-Microservice based on https://github.com/ildoonet/tf-pose-estimation
+Dockerized openpose web microservice based on flask with thin cpu implementation of pose estimation. Suitable for systems, when you need isolated pose estimation service.
+Microservice based on https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch
 
 Postman documentation https://www.getpostman.com/collections/a108214eff536f4bbcd5
 
@@ -33,3 +33,7 @@ docker run -p 5000:5000 poseapi
 docker run -d -p 5000:5000 poseapi
 ```
 
+Simple local demo with image
+```
+python demo.py --checkpoint-path checkpoint_iter_370000.pth.tar --cpu --video 0
+```

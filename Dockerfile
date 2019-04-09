@@ -13,12 +13,6 @@ WORKDIR /app
 
 RUN pip install -r requirements.txt
 
-RUN git clone https://www.github.com/ildoonet/tf-pose-estimation
-
-RUN cd tf-pose-estimation \
-    && python setup.py install
-
-
 COPY . /app
 
 ENTRYPOINT [ "python3" ]
