@@ -6,8 +6,8 @@ matplotlib
 psutil
 requests
 numpy
-
+pycocotools==2.0.0
 opencv-python
 
-torch==0.4.1
+torch==0.4.1.post2
 torchvision==0.2.1
